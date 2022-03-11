@@ -1,5 +1,15 @@
 # Chronical-Kidney-Disease-Using-ML
 
+## instruction
+
+1) project models.ipynb contains all models with EDA 
+2) dataset = kidney_disease.csv
+3) finalized_model.pkl contain final model 
+
+### To run the model, Run app.py in any text editor 
+
+# Details of ML project 
+
 Because of the increasing number of patients, the high risk of progression to end-stage renal disease, and the poor prognosis of morbidity and mortality, chronic kidney disease (CKD) places a significant burden on the healthcare system. The goal of this research is to create a machine-learning model that can predict the early-stage chronical kidney desies. A total of 400 people were chosen. The Random Forest model performed best with a 0.989 accuracy. The model proposed in this study may be useful for policymakers in predicting CKD trends in the population. The models can enable close monitoring of people at risk, early detection of CKD, better resource allocation, and patient-centred management.
 
 ## Goal:
