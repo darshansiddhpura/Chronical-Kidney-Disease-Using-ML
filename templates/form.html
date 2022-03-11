@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Insurance Lead Prediction </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form_style.css') }}"
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   
+<body>
+
+  <div class="Predict">
+    <h1> Insurance Lead Prediction </h1>
+    
+       <form action = "{{url_for('predict')}}" method = "POST">
+          <label for="Age">Age </label>
+          <input type = "text" name = "age" placeholder="Enter Upper age">
+          <br>
+          <label for="bp">bp </label>
+          <input type = "text" name = "bp" placeholder="bp">
+          <br>
+          <label for="Age">sg </label>
+          <input type = "text" name = "sg" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">al </label>
+          <input type = "text" name = "al" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">su </label>
+          <input type = "text" name = "su" placeholder="Enter Upper age">
+          <br>
+          <label for="Is_Spouse">pc</label>
+          <select name="pc">
+          <option value="0">normal</option>
+          <option value="1">abnormal</option>
+          </select>
+          <br>
+          <label for="Is_Spouse">pcc</label>
+          <select name="pcc">
+          <option value="0">not present</option>
+          <option value="1">present</option>
+          </select>
+          <br>
+          <label for="Is_Spouse">ba</label>
+          <select name="ba">
+          <option value="0">not present</option>
+          <option value="1">present</option>
+          </select>
+          <br>
+          <label for="Age">bgr</label>
+          <input type = "text" name = "bgr" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">bu</label>
+          <input type = "text" name = "bu" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">sc</label>
+          <input type = "text" name = "sc" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">sod</label>
+          <input type = "text" name = "sod" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">pot</label>
+          <input type = "text" name = "pot" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">hemo</label>
+          <input type = "text" name = "hemo" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">pcv</label>
+          <input type = "text" name = "pcv" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">wc</label>
+          <input type = "text" name = "wc" placeholder="Enter Upper age">
+          <br>
+          <label for="Age">rc</label>
+          <input type = "text" name = "rc" placeholder="Enter Upper age">
+          <br>
+          <label for="Is_Spouse">htn</label>
+          <select name="htn">
+          <option value="0">yes</option>
+          <option value="1">no</option>
+          </select>
+          <br>
+          <label for="Is_Spouse">dm</label>
+          <select name="dm">
+          <option value="0">yes</option>
+          <option value="1">no</option>
+          </select>
+          <br>
+          <label for="Is_Spouse">cad</label>
+          <select name="cad">
+          <option value="0">yes</option>
+          <option value="1">no</option>
+          </select>
+          <br>
+          <label for="Is_Spouse">appet</label>
+          <select name="appet">
+          <option value="0">good</option>
+          <option value="1">poor</option>
+          </select>
+          <br>
+          <label for="Is_Spouse">pe</label>
+          <select name="pe">
+          <option value="0">yes</option>
+          <option value="1">no</option>
+          </select>
+          <br>
+          <label for="Is_Spouse">ane</label>
+          <select name="ane">
+          <option value="0">yes</option>
+          <option value="1">no</option>
+          </select>
+          <br>
+          <label for="Is_Spouse">classifiction</label>
+          <select name="classifiction">
+          <option value="0">ckd</option>
+          <option value="1">not ckd</option>
+          </select>
+
+          <button type="submit" class = "btn btn-primary btn-block btn-large"> Predict  </button>
+     
+    </form>
+    
+    <br>
+    <br>
+    
+    {{prediction_text}}
+
+
+</div>   
+
+</body>
+</html>
+
+ 
